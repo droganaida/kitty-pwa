@@ -1,0 +1,59 @@
+:root {
+    --main-bg-color: #e3d7bf;
+    --main-accent-color: #948b6e;
+    --text-color: #232927;
+    --light-bg-color: #ffffff;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: var(--light-bg-color);
+    color: var(--text-color);
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+main {
+    flex-grow: 1;
+    display: flex;
+    background:
+        linear-gradient(324deg, var(--main-accent-color) 4%, transparent 4%) -70px 43px,
+        linear-gradient( 36deg, var(--main-accent-color) 4%, transparent 4%) 30px 43px,
+        linear-gradient( 72deg, var(--main-bg-color) 8.5%, transparent 8.5%) 30px 43px,
+        linear-gradient(288deg, var(--main-bg-color) 8.5%, transparent 8.5%) -70px 43px,
+        linear-gradient(216deg, var(--main-bg-color) 7.5%, transparent 7.5%) -70px 23px,
+        linear-gradient(144deg, var(--main-bg-color) 7.5%, transparent 7.5%) 30px 23px,
+        linear-gradient(324deg, var(--main-accent-color) 4%, transparent 4%) -20px 93px,
+        linear-gradient( 36deg, var(--main-accent-color) 4%, transparent 4%) 80px 93px,
+        linear-gradient( 72deg, var(--main-bg-color) 8.5%, transparent 8.5%) 80px 93px,
+        linear-gradient(288deg, var(--main-bg-color) 8.5%, transparent 8.5%) -20px 93px,
+        linear-gradient(216deg, var(--main-bg-color) 7.5%, transparent 7.5%) -20px 73px,
+        linear-gradient(144deg, var(--main-bg-color) 7.5%, transparent 7.5%) 80px 73px;
+    background-color: var(--main-accent-color);
+    background-size: 100px 100px;
+}
+header, footer {
+    flex-grow: 0;
+    padding: 20px;
+}
+footer {
+    text-align: center;
+}
+a {
+    color: var(--text-color);
+}
+a:hover {
+    color: var(--main-accent-color);
+}
+.holder {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    margin: auto;
+    background: var(--main-bg-color);
+    text-align: center;
+}
